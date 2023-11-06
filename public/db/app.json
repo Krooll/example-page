@@ -3,9 +3,9 @@
         {
             "id": "1",
             "title": "The last of Us",
-            "icon": "images/tloucard.webp",
-            "image": "images/test.jpg",
-            "fullImage": "fullImage",
+            "icon": "images/card/tloucard.webp",
+            "image": "images/card/tloucard.webp",
+            "fullImage": "tlou.webp",
             "bestSeller": "true",
             "description": "Jesteś gotów rozpocząć przygodę z The Last of Us™? Ta gra to przejmująca opowieść, która przedstawia świat dwie dekady po pandemii.",
             "price": 50,

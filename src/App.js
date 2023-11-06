@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div>
-      {products.map(product => <li key={product.id}>{product.title} {product.icon}</li>)}
+      {products.map(product => <li key={product.id}>{product.title} <img src={product.icon}/></li>)}
     </div>
   );
 }
