@@ -1,9 +1,10 @@
+import NavBar from "./components/features/NavBar/NavBar";
 
 const App = () => {
 
   return (
     <div>
-      Hello world
+      <NavBar />
     </div>
   );
 }

@@ -1,0 +1,37 @@
+.psIcon {
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.leftSection {
+    display: flex;
+}
+
+.navList {
+    margin-left: 10px;
+}
+
+.navButtons{
+    margin: 1px;
+    background: none;
+    border: none;
+}
+
+.rightSection {
+    display: flex;
+    width: auto;
+    min-width: 125px;
+    height: auto;
+    max-height: 40px;
+    margin-top: 10px;
+}
+
+.logButton {
+    margin-left: 5px;
+    border-radius: 20px;
+}
