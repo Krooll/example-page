@@ -210,6 +210,39 @@
         }
     ],
 
+    "options": [
+        {
+            "id": "1",
+            "text": "Gry",
+            "icon": "images/icons/icon1.jpg",
+            "category": "games"
+        },
+        {
+            "id": "2",
+            "text": "BestSellers",
+            "icon": "images/icons/icon6.jpg",
+            "category": "games"
+        },
+        {
+            "id": "3",
+            "text": "Sprzęt",
+            "icon": "images/icons/icon2.jpg",
+            "category": "accessories"
+        },
+        {
+            "id": "4",
+            "text": "Sklep",
+            "icon": "images/icons/icon4.jpg",
+            "category": "shop"
+        },
+        {
+            "id": "5",
+            "text": "Pomoc",
+            "icon": "images/icons/icon5.jpg",
+            "category": "help"
+        }
+    ],
+
     "mails": [
 
     ],

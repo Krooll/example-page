@@ -2,22 +2,22 @@
 export const API_URL = process.env.NODE_ENV === 'production' ?  '/api' : 'http://localhost:3131/api';
 
 //selectors
-export const getAllProducts = (state) => state.products;
+export const getAllOptions = (state) => state.options;
 
 // actions
 const createActionName = actionName => `app/products/${actionName}`;
-const UPDATE_PRODUCTS = createActionName('UPDATE_PRODUCTS')
+const UPDATE_OPTIONS = createActionName('UPDATE_OPTIONS')
 
 
 // action creators
-export const upDatedProducts = payload => ({type: UPDATE_PRODUCTS, payload});
+export const updatedOptions = payload => ({type: UPDATE_OPTIONS, payload});
 
-export const fetchProducts = () => {
+export const fetchOptions = () => {
   return (dispatch) => {
-      fetch(API_URL + '/products')
+      fetch(API_URL + '/options')
         .then(res => res.json())
-        .then(products => {
-            dispatch(upDatedProducts(products));
+        .then(options => {
+            dispatch(updatedOptions(options));
         })
         .catch((error) => {
             console.error(error);
@@ -25,13 +25,13 @@ export const fetchProducts = () => {
   };
 };
 
-const productsReducer = (statePart = [], action) => {
+const optionsReducer = (statePart = [], action) => {
   switch (action.type) {
-    case UPDATE_PRODUCTS:
+    case UPDATE_OPTIONS:
       return [...action.payload]; 
     default:
       return statePart;
   };
 };
 
-export default productsReducer;
+export default optionsReducer;
