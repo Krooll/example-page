@@ -1,9 +1,10 @@
 import styles from './OpenNav.module.scss';
 import { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+import { Nav } from 'react-bootstrap';
 
 const OpenNav = (props) => {
     const filterOptions = props.filter;
-    console.log('filterOptions', filterOptions);
 
     useEffect(() => {
     }, [filterOptions]);
@@ -15,7 +16,11 @@ const OpenNav = (props) => {
     return(
         <div className={styles.container}>
            {filterOptions.map(item => 
-           <button key={item.id}>{item.text} {item.icon}</button>)}
+                <Nav.Link as={NavLink} to={"/" + item.path}>
+                    <button key={item.id} className={styles.button}><img className={styles.icon} src={item.icon}/> 
+                    <p className={styles.text}>{item.text}</p></button>
+                </Nav.Link>
+            )}
         </div>
     );
 };

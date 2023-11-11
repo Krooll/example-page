@@ -215,31 +215,36 @@
             "id": "1",
             "text": "Gry",
             "icon": "images/icons/icon1.jpg",
-            "category": "games"
+            "category": "games",
+            "path" : "games"
         },
         {
             "id": "2",
-            "text": "BestSellers",
+            "text": "Hity",
             "icon": "images/icons/icon6.jpg",
-            "category": "games"
+            "category": "games",
+            "path" : "best-sellers"
         },
         {
             "id": "3",
             "text": "Sprzęt",
             "icon": "images/icons/icon2.jpg",
-            "category": "accessories"
+            "category": "accessories",
+            "path" : "accessories"
         },
         {
             "id": "4",
             "text": "Sklep",
             "icon": "images/icons/icon4.jpg",
-            "category": "shop"
+            "category": "shop",
+            "path" : "shop"
         },
         {
             "id": "5",
             "text": "Pomoc",
             "icon": "images/icons/icon5.jpg",
-            "category": "help"
+            "category": "help",
+            "path" : "help"
         }
     ],
 

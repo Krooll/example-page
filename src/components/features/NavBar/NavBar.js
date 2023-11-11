@@ -1,8 +1,7 @@
 import styles from './NavBar.module.scss';
 import { Navbar, Nav, Col} from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faL, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faPlaystation } from '@fortawesome/free-brands-svg-icons';
 import OpenNav from '../../common/OpenNav/OpenNav';
 import { useState } from 'react';
@@ -31,7 +30,7 @@ const NavBar = () => {
     }
 
     return(
-        <Col xs={12} md={12} lg={12} >
+        <Col xs={12} md={12} lg={12}>
         <Navbar collapseOnSelect expand="lg" className="bg-white fixed-top shadow p-3 mb-5">
             <Col xs={12} md={12} lg={12} className={styles.navBar}>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -47,7 +46,7 @@ const NavBar = () => {
                         {active && <OpenNav filter={filter} />}
                     </Col> 
                 </Navbar.Collapse>
-                <Col xs={6} sm={6} md={6} lg={6} className={styles.lefNavButtons}>
+                <Col xs={6} sm={6} md={6} lg={6} className={styles.rightNavButtons}>
                     <button className={styles.searchButton}>{searchIcon}</button>
                     <button className={styles.logButton}>Wpisz się</button>
                 </Col>
