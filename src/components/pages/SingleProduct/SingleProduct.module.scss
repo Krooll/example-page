@@ -1,0 +1,63 @@
+@import '../../../styles/settings.scss';
+
+.singleCard {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    position: relative;
+}
+
+.singleBackGround {
+    height: auto;
+    min-height: 300px;
+    width: 100%;
+}
+
+.cardTitle {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    padding: 10px;
+    color: $white-color;
+}
+
+.title {
+    font-size: 4vw;
+}
+
+.cardDescription {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    font-size: 1.2vw;
+    font-weight: 400;
+    padding: 10px;
+    color: $white-color;
+    margin-top: 20px;
+}
+
+.loading {
+    text-align: center;
+    margin: 200px 0;
+}
+
+.button {
+    border-radius: 20px;
+    border: none;
+    background-color: $single-color;
+    color: $white-color;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.buttonText {
+    font-size: 1vw;
+    margin: 0;
+    padding: 1px;
+}

@@ -3,6 +3,7 @@ export const API_URL = process.env.NODE_ENV === 'production' ?  '/api' : 'http:/
 
 //selectors
 export const getAllProducts = (state) => state.products;
+export const getProductById = ({products}, id) => products.find(product => product.id === id);
 
 // actions
 const createActionName = actionName => `app/products/${actionName}`;

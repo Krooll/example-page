@@ -7,6 +7,7 @@ import { Container, Col } from 'react-bootstrap';
 import { getAllProducts } from '../../../redux/productsRedux';
 import NavBar from '../../features/NavBar/NavBar';
 import ProductCard from '../../common/ProductCard/ProductCard';
+import List from '../../common/List/List';
 
 const AccessoriesList = () => {
     const productList = useSelector(getAllProducts);
@@ -26,7 +27,7 @@ const AccessoriesList = () => {
                 <div className={styles.loading}>Loading...</div>
             </Container>
         )
-    };
+    }
 
     return(
         <Container>

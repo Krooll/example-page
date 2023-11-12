@@ -4,12 +4,11 @@ import NavBar from '../../features/NavBar/NavBar';
 import { useForm } from "react-hook-form";
 import { useState } from 'react';
 import { Form } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { sendEmailRequest } from '../../../redux/mailsRedux';
 import shortid from 'shortid';
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+
+
 
 
 const Help = () => {
@@ -19,16 +18,6 @@ const Help = () => {
     const [message, setMessage] = useState('');
     const [info, setInfo] = useState(false);
     const dispatch = useDispatch();
-    const form = useRef();
-
-    const sendEmail = () => {
-        emailjs.sendForm('service_sb0p2jl', 'template_u1vwadn', form.current, '6kRcRpGnOniZpFlCc')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-      };
 
     const handleSubmit = () => {
         if(name && email && title && message){
@@ -37,18 +26,13 @@ const Help = () => {
         }
     };
 
-    const onSubmit = () => {
-        sendEmail();
-        validate(handleSubmit);
-    }
-
     const { register, handleSubmit: validate, formState: { errors } } = useForm();
 
     return(
         <Container>
             <NavBar />
                 <Col xs={12} md={12} lg={12} className={styles.form}>
-                    <Form ref={form} onSubmit={validate(handleSubmit)} className={styles.formSection}>
+                    <Form onSubmit={validate(handleSubmit)} className={styles.formSection}>
                         <Col xs={9} md={10} lg={8} className={styles.formTitle}>
                             <h1>Pomoc</h1>
                         </Col>
@@ -95,7 +79,7 @@ const Help = () => {
                             </Form.Group>
                         </Col>
                         <div className={styles.button}>
-                            <button onClick={onSubmit} className={styles.buttonForm}>Wyślij</button>
+                            <button type='submit' className={styles.buttonForm}>Wyślij</button>
                         </div>
                     </Form>
                     <Modal show={info} className={styles.modal}>
