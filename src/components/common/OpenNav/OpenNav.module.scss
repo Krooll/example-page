@@ -2,8 +2,12 @@
 
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: auto;
     width: auto;
+    min-width: 200px;
+    margin-left: 30px;
 }
 
 .text {

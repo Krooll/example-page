@@ -1,6 +1,7 @@
 @import '../../../styles/settings.scss';
 
 .psIcon {
+    margin-top: 2.5px;
     height: 40px;
     width: 40px;
     font-size: 2rem;
@@ -59,7 +60,7 @@
 
 .logButton:hover {
     border: 1px solid $border-color;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.1s;
 }
 

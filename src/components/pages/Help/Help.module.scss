@@ -1,3 +1,4 @@
+@import '../../../styles/settings.scss';
 .title {
     text-align: center;
     margin-top: 170px;
@@ -13,4 +14,30 @@
     width: 50%;
     margin-top: 170px;
     margin-left: 50px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.buttonForm {
+    height: auto;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+.buttonForm:hover {
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+.modal {
+    text-align: center;
+    height: auto;
+    width: 300px;
 }

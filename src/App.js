@@ -7,6 +7,7 @@ import AccessoriesList from './components/pages/AccessoriesList/AccessoriesList'
 import Shop from './components/pages/Shop/Shop';
 import Help from './components/pages/Help/Help';
 import NotFound from './components/pages/NotFound/NotFound';
+import Footer from "./components/views/Footer/Footer";
 
 const App = () => {
 
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/help" element={<Help />}></Route>
         <Route path="/*" element={<NotFound />}></Route>
       </Routes>
+      <Footer />
     </Container>
   );
 }

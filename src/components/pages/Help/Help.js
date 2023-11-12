@@ -1,4 +1,4 @@
-import { Container, Col, Modal } from 'react-bootstrap';
+import { Container, Col, Modal, Button } from 'react-bootstrap';
 import styles from './Help.module.scss';
 import NavBar from '../../features/NavBar/NavBar';
 import { useForm } from "react-hook-form";
@@ -8,37 +8,57 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { sendEmailRequest } from '../../../redux/mailsRedux';
 import shortid from 'shortid';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 const Help = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [title, setTitle] = useState('');
     const [message, setMessage] = useState('');
+    const [info, setInfo] = useState(false);
     const dispatch = useDispatch();
-    const navigate = useNavigate();
+    const form = useRef();
 
-    const handleSubmit = (e) => {
+    const sendEmail = () => {
+        emailjs.sendForm('service_sb0p2jl', 'template_u1vwadn', form.current, '6kRcRpGnOniZpFlCc')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
+
+    const handleSubmit = () => {
         if(name && email && title && message){
             dispatch(sendEmailRequest({id: shortid(), name: name, email: email, title: title, message: message}));
-            navigate('/');
+            setInfo(true);
         }
     };
- 
+
+    const onSubmit = () => {
+        sendEmail();
+        validate(handleSubmit);
+    }
+
     const { register, handleSubmit: validate, formState: { errors } } = useForm();
 
     return(
         <Container>
             <NavBar />
                 <Col xs={12} md={12} lg={12} className={styles.form}>
-                    <Form onSubmit={validate(handleSubmit)} className={styles.formSection}>
+                    <Form ref={form} onSubmit={validate(handleSubmit)} className={styles.formSection}>
                         <Col xs={9} md={10} lg={8} className={styles.formTitle}>
                             <h1>Pomoc</h1>
-                            <p>
-                                Jeśli potrzebujesz się z Nami skontaktować, wypełnij formularz,
-                                odpowiemy najszybciej jak to możliwe.
-                            </p>
                         </Col>
-                        <Col xs={10} md={10} lg={8}>
+                        <Col xs={12} md={12} lg={11}>
+                                <p>
+                                    Jeśli potrzebujesz się z Nami skontaktować, wypełnij formularz,
+                                    odpowiemy najszybciej jak to możliwe.
+                                </p>
+                            </Col>
+                        <Col xs={11} md={10} lg={8}>
                             <Form.Group className={styles.formGroup}>
                                 <Form.Label>Imię</Form.Label>
                                 <Form.Control 
@@ -61,12 +81,12 @@ const Help = () => {
                                     {...register("title", { required: true, minLength: 3, maxLength: 20})}
                                     value={title}
                                     onChange={e => setTitle(e.target.value)} placeholder="Wpisz tytuł wiadomości..." />
-                                    {errors.title && <small className="d-block form-text text-danger mt-2">To pole jest wymagane, minimum 3 znaki.</small>}
+                                    {errors.title && <small className="d-block form-text text-danger mt-2">To pole jest wymagane, minimum 3 znaki, maximum 20.</small>}
                             </Form.Group>
                         </Col>
-                        <Col xs={10} md={12} lg={12}>
+                        <Col xs={12} md={12} lg={12}>
                             <Form.Group >
-                                <Form.Label>Opisz problem</Form.Label>
+                                <Form.Label>Napisz wiadomość</Form.Label>
                                 <Form.Control as="textarea" rows={4} placeholder="Napisz wiadomość..." 
                                 {...register("message", { required: true, minLength: 25, maxLength: 520})}
                                 value={message} 
@@ -74,8 +94,13 @@ const Help = () => {
                                 {errors.message && <small className="d-block form-text text-danger mt-2">To pole jest wymagane, minimum 25 znaków.</small>} 
                             </Form.Group>
                         </Col>
-                        <button type='submit' className={styles.buttonForm}>Wyślij</button>
+                        <div className={styles.button}>
+                            <button onClick={onSubmit} className={styles.buttonForm}>Wyślij</button>
+                        </div>
                     </Form>
+                    <Modal show={info} className={styles.modal}>
+                        <Modal.Title>Wiadomośc została wysłana!</Modal.Title>
+                    </Modal>
                 </Col>
         </Container>
     );
