@@ -1,0 +1,47 @@
+@import '../../../styles/settings.scss';
+
+.card {
+    height: 180px;
+    width: 150px;
+    margin: 10px;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.cardImg {
+    height: 180px;
+    width: 150px;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.cardTitle {
+    position: absolute;
+    font-size: 0.9rem;
+    top: 57%;
+    padding: 4px;
+    color: $white-color;
+    -webkit-text-stroke: 0.2px black;
+}
+
+.cardButton {
+   position: absolute;
+   top: 83%;
+   left: 3%;
+   height: 25px;
+   width: 125px;
+   border-radius: 15px;
+   border: none;
+   background-color: #D2D2CB;
+   color: $white-color;
+   
+}
+
+.buttonText{
+    font-size: 0.8rem;
+    margin: 0;
+}

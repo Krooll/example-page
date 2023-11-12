@@ -24,7 +24,7 @@ const AccessoriesList = () => {
                 <Col className={styles.title}>
                     <h2>Sprzęt</h2>
                 </Col>
-                <div className={styles.loading}>Loading...</div>
+                <div className={styles.loading}>Wczytywanie...</div>
             </Container>
         )
     }

@@ -24,7 +24,7 @@ const BestSellers = () => {
                 <Col className={styles.title}>
                     <h2>Hity Plastation</h2>
                 </Col>
-                <div className={styles.loading}>Loading...</div>
+                <div className={styles.loading}>Wczytywanie...</div>
             </Container>
             )
         };

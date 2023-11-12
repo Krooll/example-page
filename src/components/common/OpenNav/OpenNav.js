@@ -10,7 +10,7 @@ const OpenNav = (props) => {
     }, [filterOptions]);
 
     if (!filterOptions.length) {
-        return <div className={styles.loading}>Loading...</div>;
+        return <div className={styles.loading}>Wczytywanie...</div>;
     }
 
     return(
