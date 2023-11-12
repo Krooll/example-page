@@ -16,8 +16,8 @@ const OpenNav = (props) => {
     return(
         <div className={styles.container}>
            {filterOptions.map(item => 
-                <Nav.Link as={NavLink} to={"/" + item.path}>
-                    <button key={item.id} className={styles.button}><img className={styles.icon} src={item.icon}/> 
+                <Nav.Link key={item.id} as={NavLink} to={"/" + item.path}>
+                    <button className={styles.button}><img className={styles.icon} src={item.icon}/> 
                     <p className={styles.text}>{item.text}</p></button>
                 </Nav.Link>
             )}

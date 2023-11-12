@@ -3,10 +3,12 @@ import thunk from 'redux-thunk';
 import initialState from './intitialState';
 import productsReducer from './productsRedux';
 import optionsReducer from './optionRedux';
+import mailsReducer from './mailsRedux';
 
 const subreducers = {
     products: productsReducer,
     options: optionsReducer,
+    mails: mailsReducer
 }
 
 const reducer = combineReducers(subreducers);

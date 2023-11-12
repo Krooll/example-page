@@ -1,7 +1,7 @@
 import styles from './NavBar.module.scss';
 import { Navbar, Nav, Col} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faL, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faPlaystation } from '@fortawesome/free-brands-svg-icons';
 import OpenNav from '../../common/OpenNav/OpenNav';
 import { useState } from 'react';
@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getAllOptions } from '../../../redux/optionRedux';
 import { useEffect } from 'react';
 import { fetchOptions } from '../../../redux/optionRedux';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     /*FontAwesomeIcons*/
@@ -36,7 +37,7 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Col xs={7} sm={8} md={9} lg={7} className={styles.navSection}>
-                    <div className={styles.iconSection}><button className={styles.psIcon} onClick={() => setActive(false)}>{psIcon}</button></div>
+                    <div className={styles.iconSection}><Nav.Link as={NavLink} to="/"><button className={styles.psIcon} onClick={() => setActive(false)}>{psIcon}</button></Nav.Link></div>
                         <Nav className="me-auto">
                             <Nav.Link onClick={() => handleFilter('games')}>Gry</Nav.Link>
                             <Nav.Link onClick={() => handleFilter('accessories')}>Sprzęt</Nav.Link>
