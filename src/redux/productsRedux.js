@@ -7,7 +7,7 @@ export const getProductById = ({products}, id) => products.find(product => produ
 
 // actions
 const createActionName = actionName => `app/products/${actionName}`;
-const UPDATE_PRODUCTS = createActionName('UPDATE_PRODUCTS')
+const UPDATE_PRODUCTS = createActionName('UPDATE_PRODUCTS');
 
 
 // action creators

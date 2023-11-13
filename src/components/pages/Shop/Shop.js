@@ -11,7 +11,6 @@ import ShopCard from '../../common/ShopCard/ShopCard';
 const Shop = () => {
     const allProducts = useSelector(getAllProducts);
     const [products, setProducts] = useState([]);
-    const [filter, setFilter] = useState('all');
 
     const dispatch = useDispatch();
     useEffect(() => {
@@ -23,7 +22,7 @@ const Shop = () => {
     }, [allProducts]);
 
     const handleFilterCategory = (selectCategory) => {
-        setFilter(selectCategory);
+        
         if (selectCategory === 'all') {
             setProducts(allProducts);
         } else {
@@ -39,9 +38,9 @@ const Shop = () => {
                     <h2>Sklep</h2>
                 </Col>
                 <div className={styles.shopButtons}>
-                <button>Gry</button>
-                <button>Sprzęt</button>
-                <button>Wszystko</button>
+                <button className={styles.categoryButton}><p className={styles.buttonText}>Gry</p></button>
+                <button className={styles.categoryButton}><p className={styles.buttonText}>Sprzęt</p></button>
+                <button className={styles.categoryButton}><p className={styles.buttonText}>Wszystko</p></button>
             </div>
                 <div className={styles.loading}>Wczytywanie...</div>
             </Container>
@@ -55,12 +54,18 @@ const Shop = () => {
                 <h2>Sklep</h2>
             </div>
             <div className={styles.shopButtons}>
-                <button onClick={() => handleFilterCategory('games')}>Gry</button>
-                <button onClick={() => handleFilterCategory('accessories')}>Sprzęt</button>
-                <button onClick={() => handleFilterCategory('all')}>Wszystko</button>
+                <button className={styles.categoryButton} onClick={() => handleFilterCategory('games')}>
+                    <p className={styles.buttonText}>Gry</p>
+                </button>
+                <button className={styles.categoryButton} onClick={() => handleFilterCategory('accessories')}>
+                    <p className={styles.buttonText}>Sprzęt</p>
+                </button>
+                <button className={styles.categoryButton} onClick={() => handleFilterCategory('all')}>
+                    <p className={styles.buttonText}>Wszystko</p>
+                </button>
             </div>
             <div className={styles.shopList}>
-                {products.map(item => <ShopCard key={item.id} {...item} />)}
+                {products.map(item => <ShopCard allProducts={allProducts} key={item.id} {...item} />)}
             </div>
         </Container>
     );

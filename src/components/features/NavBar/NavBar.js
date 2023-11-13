@@ -42,10 +42,10 @@ const NavBar = () => {
                         <Col xs={7} sm={8} md={9} lg={7} className={styles.navSection}>
                             <div className={styles.iconSection}><Nav.Link as={NavLink} to="/"><button className={styles.psIcon} onClick={() => setActive(false)}>{psIcon}</button></Nav.Link></div>
                             <Nav className="me-auto">
-                                <Nav.Link onClick={() => handleFilter('games')}>Gry</Nav.Link>
-                                <Nav.Link onClick={() => handleFilter('accessories')}>Sprzęt</Nav.Link>
-                                <Nav.Link onClick={() => handleFilter('shop')}>Sklep</Nav.Link>
-                                <Nav.Link onClick={() => handleFilter('help')}>Pomoc</Nav.Link>
+                                <Nav.Link onClick={() => handleFilter('games')}><p className={styles.navLinks}>Gry</p></Nav.Link>
+                                <Nav.Link onClick={() => handleFilter('accessories')}><p className={styles.navLinks}>Sprzęt</p></Nav.Link>
+                                <Nav.Link onClick={() => handleFilter('shop')}><p className={styles.navLinks}>Sklep</p></Nav.Link>
+                                <Nav.Link onClick={() => handleFilter('help')}><p className={styles.navLinks}>Pomoc</p></Nav.Link>
                             </Nav>
                             {active && <OpenNav filter={filter} />}
                         </Col> 

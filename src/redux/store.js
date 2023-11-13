@@ -4,11 +4,13 @@ import initialState from './intitialState';
 import productsReducer from './productsRedux';
 import optionsReducer from './optionRedux';
 import mailsReducer from './mailsRedux';
+import storeCartReducer from './storeCardRedux';
 
 const subreducers = {
     products: productsReducer,
     options: optionsReducer,
-    mails: mailsReducer
+    mails: mailsReducer,
+    storeCart: storeCartReducer
 }
 
 const reducer = combineReducers(subreducers);

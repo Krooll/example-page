@@ -1,17 +1,9 @@
+@import '../../../styles/settings.scss';
+
 .title {
     text-align: center;
     margin-top: 210px;
     margin-bottom: 50px;
-}
-
-.list {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 20px;
 }
 
 .loading {
@@ -34,4 +26,31 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 30px;
+}
+
+.categoryButton {
+    height: auto;
+    width: 85px;
+    margin: 0 5px;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: $white-color;
+    background-color: $blue-color;
+    color: $white-color;
+    transition: background-color 0.2s, color 0.2s, outline 0.2s, border-color 0.2s;
+    outline: solid $blue-color;
+}
+
+.categoryButton:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    background-color: $white-color;
+    border-color: $blue-color;
+    outline: solid $white-color;
+    color: $blue-color;
+}
+
+.buttonText {
+    margin: 0;
+    font-size: 0.9rem;
 }

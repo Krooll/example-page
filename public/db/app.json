@@ -239,5 +239,19 @@
       "message": "Test aplikacji pod kątem wysylania maili na serwer api. "
     }
   ],
+  "storeCart": [
+    {
+      "id": "4",
+      "title": "Kingdome Come Deliverance",
+      "category": "games",
+      "price": 40
+    },
+    {
+      "id": "1",
+      "title": "The last of Us",
+      "category": "games",
+      "price": 50
+    }
+  ],
   "orders": []
 }

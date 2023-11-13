@@ -10,7 +10,7 @@
 }
 
 .psIcon:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
     transition: 0.2s;
 }
 
@@ -20,6 +20,17 @@
     min-width: 60px;
     margin-top: -5px;
     margin-left: 3px;
+}
+
+.navLinks {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.navLinks:hover {
+    -webkit-text-stroke: 0.2px $blue-color;
 }
 
 .navSection {
@@ -52,14 +63,17 @@
     font-weight: bolder;
     font-size: 0.8rem;
     color: $white-color;
-    border: none;
+    border: 1px solid $white-color;
     border-radius: 15px;
     background-color: $blue-color;
     font-weight: 400;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
 .logButton:hover {
-    border: 1px solid $border-color;
+    background-color: $white-color;
+    border-color: $blue-color;
+    color: $blue-color;
     transform: scale(1.05);
     transition: 0.1s;
 }
@@ -74,8 +88,4 @@
 .searchButton:hover {
     transform: scale(1.2);
     transition: 0.1s;
-}
-
-.test {
-    border: 2px solid;
 }

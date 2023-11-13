@@ -45,15 +45,20 @@
 }
 
 .button {
+    height: auto;
+    width: 175px;
     border-radius: 20px;
     border: none;
-    background-color: $single-color;
+    background-color: $blue-color;
     color: $white-color;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .button:hover {
     transform: scale(1.1);
     transition: 0.2s;
+    background-color: $white-color;
+    color: #000;
 }
 
 .buttonText {
