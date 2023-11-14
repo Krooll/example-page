@@ -4,7 +4,7 @@ import initialState from './intitialState';
 import productsReducer from './productsRedux';
 import optionsReducer from './optionRedux';
 import mailsReducer from './mailsRedux';
-import storeCartReducer from './storeCardRedux';
+import storeCartReducer from './storeCartRedux';
 
 const subreducers = {
     products: productsReducer,

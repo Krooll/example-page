@@ -3,6 +3,7 @@ import { Navbar, Nav, Col} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faPlaystation } from '@fortawesome/free-brands-svg-icons';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import OpenNav from '../../common/OpenNav/OpenNav';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -10,13 +11,16 @@ import { getAllOptions } from '../../../redux/optionRedux';
 import { useEffect } from 'react';
 import { fetchOptions } from '../../../redux/optionRedux';
 import { NavLink } from 'react-router-dom';
+import ShoppingCart from '../ShoppingCart/ShoppingCart';
 
 const NavBar = () => {
     const psIcon = <FontAwesomeIcon className={styles.psIcon} icon={faPlaystation} />
     const searchIcon = <FontAwesomeIcon icon={faMagnifyingGlass} />
+    const shoppingCart = <FontAwesomeIcon icon={faCartShopping} />
 
     const options = useSelector(getAllOptions);
     const [active, setActive] = useState(false);
+    const [show, setShow] = useState(false);
     const [filter, setFilter] = useState(options);
 
     const dispatch = useDispatch();
@@ -31,7 +35,14 @@ const NavBar = () => {
     const handleFilter = (selectCategory) => {
         setFilter(options.filter(item => item.category === selectCategory));
         setActive(true);
-    }
+    };
+
+    const handleShowCart = () => {
+        setShow(true);
+    };
+    const handleHideCart = () => {
+        setShow(false);
+    };
 
     return(
         <Col xs={12} md={12} lg={12}>
@@ -52,10 +63,12 @@ const NavBar = () => {
                     </Navbar.Collapse>
                     <Col xs={6} sm={6} md={6} lg={6} className={styles.rightNavButtons}>
                         <button className={styles.searchButton}>{searchIcon}</button>
+                        <button onClick={handleShowCart} className={styles.searchButton}>{shoppingCart}</button>
                         <button className={styles.logButton}>Wpisz się</button>
                     </Col>
                 </Col>
             </Navbar>
+            <ShoppingCart show={show} handleHideCart={handleHideCart}/>
         </Col>
     );
 };
