@@ -6,7 +6,7 @@ const dbPath = path.join(__dirname, 'build/db/app.json'); // Łączenie ścieżk
 const router = jsonServer.router(dbPath);
 const middlewares = jsonServer.defaults({
   static: 'build',
-  noCors: true
+  noCors: false
 });
 const port = process.env.PORT || 3131;
 
