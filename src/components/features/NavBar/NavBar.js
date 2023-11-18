@@ -72,9 +72,11 @@ const NavBar = () => {
                         <button className={styles.searchButton}>{searchIcon}</button>
                         <button onClick={handleShowCart} className={styles.searchButton}>
                             {shoppingCart}
-                            <div className={styles.orderCounter}>
-                                {orderCounter}
-                            </div>
+                            {orderCounter !== 0 && (
+                                <div className={styles.orderCounter}>
+                                    {orderCounter}
+                                </div>
+                            )}
                         </button>
                         <button className={styles.logButton}>Wpisz się</button>
                     </Col>
