@@ -13,7 +13,7 @@ const Help = () => {
     const [email, setEmail] = useState('');
     const [title, setTitle] = useState('');
     const [message, setMessage] = useState('');
-    const [info, setInfo] = useState(false);
+    const [info, setInfo] = useState(true);
     const dispatch = useDispatch();
 
     const handleSubmit = () => {

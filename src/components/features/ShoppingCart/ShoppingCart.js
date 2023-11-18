@@ -5,10 +5,17 @@ import OrderData from '../OrderData/OrderData';
 import { useDispatch, useSelector } from 'react-redux';
 import { sendOrderRequest } from '../../../redux/orderRedux';
 import shortid from 'shortid';
+import { useState } from 'react';
+import { Modal, Button } from 'react-bootstrap';
 
 const ShoppingCart = (props) => {
     const activeOrders = useSelector(getAllOrders);
     const totalSum = useSelector(getTotalPriceSum);
+    const [info, setShowInfo] = useState(false);
+
+    const handleShowInfo = () => {
+        setShowInfo(true);
+    };
 
     const dispatch = useDispatch();
     const handleSendOrder = () => {
@@ -43,11 +50,16 @@ const ShoppingCart = (props) => {
                         Do zapłaty: {totalSum} $
                     </Col>
                     <Col xs={6} md={6} lg={6} className={styles.buttonSection}>
-                        <button onClick={handleSendOrder} className={styles.button}>Zamów</button>
+                        <button onClick={() => {handleShowInfo(); handleSendOrder();}} className={styles.button}>Zamów</button>
                     </Col>
                   </div>
                 </Col>
                 </Offcanvas.Body>
+                <Modal show={info}>
+                    <div className={styles.info}>
+                        Zamówienie zostało wysłane!
+                    </div>
+                </Modal>
         </Offcanvas>
     );
 };

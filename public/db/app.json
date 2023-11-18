@@ -280,15 +280,33 @@
   ],
   "orders": [
     {
-      "id": "jSS0QSg9B",
+      "id": "j1LVYvDZb",
       "orderData": [
         {
-          "id": "5",
-          "title": "Resident-Evil 2",
-          "icon": "images/cards/re2card.webp",
-          "category": "games",
-          "price": 50,
-          "totalPrice": 50,
+          "id": "11",
+          "title": "PS5 Standard",
+          "icon": "images/cards/ps5card.webp",
+          "category": "accessories",
+          "price": 255,
+          "totalPrice": 255,
+          "pieces": 1
+        },
+        {
+          "id": "12",
+          "title": "PS5 Gamepad",
+          "icon": "images/cards/ps5gamepadcard.webp",
+          "category": "accessories",
+          "price": 80,
+          "totalPrice": 80,
+          "pieces": 1
+        },
+        {
+          "id": "13",
+          "title": "Headphones",
+          "icon": "images/cards/ps5headphones.webp",
+          "category": "accessories",
+          "price": 99,
+          "totalPrice": 99,
           "pieces": 1
         },
         {
@@ -299,12 +317,7 @@
           "price": 60,
           "totalPrice": 60,
           "pieces": 1
-        }
-      ]
-    },
-    {
-      "id": "xyNM4klK8",
-      "orderData": [
+        },
         {
           "id": "3",
           "title": "The last of Us: Part 2",
@@ -313,56 +326,38 @@
           "price": 60,
           "totalPrice": 60,
           "pieces": 1
-        },
+        }
+      ]
+    },
+    {
+      "id": "RQVdIsr_9",
+      "orderData": [
         {
           "id": "2",
           "title": "Stray",
           "icon": "images/cards/straycard.webp",
           "category": "games",
           "price": 30,
-          "totalPrice": 30,
-          "pieces": 1
+          "totalPrice": 150,
+          "pieces": 5
         },
         {
-          "id": "1",
-          "title": "The last of Us",
-          "icon": "images/cards/tloucard.webp",
+          "id": "8",
+          "title": "Cyber-punk 2077",
+          "icon": "images/cards/cybercard.webp",
+          "category": "games",
+          "price": 45,
+          "totalPrice": 450,
+          "pieces": 10
+        },
+        {
+          "id": "7",
+          "title": "Ghost of Tsushima",
+          "icon": "images/cards/gotcard.webp",
           "category": "games",
           "price": 50,
-          "totalPrice": 50,
-          "pieces": 1
-        }
-      ]
-    },
-    {
-      "id": "A1fmhfVPU",
-      "orderData": [
-        {
-          "id": "4",
-          "title": "Kingdome Come Deliverance",
-          "icon": "images/cards/kingdomecard.webp",
-          "category": "games",
-          "price": 40,
-          "totalPrice": 160,
-          "pieces": 4
-        },
-        {
-          "id": "5",
-          "title": "Resident-Evil 2",
-          "icon": "images/cards/re2card.webp",
-          "category": "games",
-          "price": 50,
-          "totalPrice": 200,
-          "pieces": 4
-        },
-        {
-          "id": "6",
-          "title": "Red Dead Redemption 2",
-          "icon": "images/cards/rdr2card.webp",
-          "category": "games",
-          "price": 60,
-          "totalPrice": 420,
-          "pieces": 7
+          "totalPrice": 750,
+          "pieces": 15
         }
       ]
     }

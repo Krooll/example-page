@@ -12,6 +12,7 @@ import { useEffect } from 'react';
 import { fetchOptions } from '../../../redux/optionRedux';
 import { NavLink } from 'react-router-dom';
 import ShoppingCart from '../ShoppingCart/ShoppingCart';
+import { getAllOrders } from '../../../redux/storeCartRedux';
 
 const NavBar = () => {
     const psIcon = <FontAwesomeIcon className={styles.psIcon} icon={faPlaystation} />
@@ -22,6 +23,12 @@ const NavBar = () => {
     const [active, setActive] = useState(false);
     const [show, setShow] = useState(false);
     const [filter, setFilter] = useState(options);
+    const ordersNumber = useSelector(getAllOrders);
+    const [orderCounter, setOrderCounter] = useState();
+
+    useEffect(() => {
+        setOrderCounter(ordersNumber.length);
+    }, [ordersNumber]);
 
     const dispatch = useDispatch();
     useEffect(() => {
@@ -63,7 +70,12 @@ const NavBar = () => {
                     </Navbar.Collapse>
                     <Col xs={6} sm={6} md={6} lg={6} className={styles.rightNavButtons}>
                         <button className={styles.searchButton}>{searchIcon}</button>
-                        <button onClick={handleShowCart} className={styles.searchButton}>{shoppingCart}</button>
+                        <button onClick={handleShowCart} className={styles.searchButton}>
+                            {shoppingCart}
+                            <div className={styles.orderCounter}>
+                                {orderCounter}
+                            </div>
+                        </button>
                         <button className={styles.logButton}>Wpisz się</button>
                     </Col>
                 </Col>
