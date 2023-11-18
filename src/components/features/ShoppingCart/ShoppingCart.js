@@ -1,13 +1,19 @@
 import { getAllOrders, getTotalPriceSum } from '../../../redux/storeCartRedux';
 import styles from './ShoppingCart.module.scss';
-import { Col, Offcanvas,  } from 'react-bootstrap';
+import { Col, Offcanvas } from 'react-bootstrap';
 import OrderData from '../OrderData/OrderData';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { sendOrderRequest } from '../../../redux/orderRedux';
+import shortid from 'shortid';
 
 const ShoppingCart = (props) => {
     const activeOrders = useSelector(getAllOrders);
     const totalSum = useSelector(getTotalPriceSum);
-    console.log('activeOrder', activeOrders);
+
+    const dispatch = useDispatch();
+    const handleSendOrder = () => {
+        dispatch(sendOrderRequest({id: shortid(), orderData: activeOrders }));
+    }
 
     if(!activeOrders.length){
         return(
@@ -32,8 +38,13 @@ const ShoppingCart = (props) => {
                 <Offcanvas.Body>
                 <Col xs={12} md={12} lg={12} className={styles.cartWindow}>
                     {activeOrders.map(order => <OrderData key={order.id} {...order} />)}
-                  <div>
-                    suma: {totalSum}
+                  <div className={styles.sumData}>
+                    <Col xs={6} md={6} lg={6}>
+                        Do zapłaty: {totalSum} $
+                    </Col>
+                    <Col xs={6} md={6} lg={6} className={styles.buttonSection}>
+                        <button onClick={handleSendOrder} className={styles.button}>Zamów</button>
+                    </Col>
                   </div>
                 </Col>
                 </Offcanvas.Body>

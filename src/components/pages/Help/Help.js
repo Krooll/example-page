@@ -8,9 +8,6 @@ import { useDispatch } from 'react-redux';
 import { sendEmailRequest } from '../../../redux/mailsRedux';
 import shortid from 'shortid';
 
-
-
-
 const Help = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');

@@ -278,6 +278,93 @@
       "message": "Testuje aplikacje pod kątem działania wysyłania maili do Api"
     }
   ],
-
-  "orders": []
+  "orders": [
+    {
+      "id": "jSS0QSg9B",
+      "orderData": [
+        {
+          "id": "5",
+          "title": "Resident-Evil 2",
+          "icon": "images/cards/re2card.webp",
+          "category": "games",
+          "price": 50,
+          "totalPrice": 50,
+          "pieces": 1
+        },
+        {
+          "id": "6",
+          "title": "Red Dead Redemption 2",
+          "icon": "images/cards/rdr2card.webp",
+          "category": "games",
+          "price": 60,
+          "totalPrice": 60,
+          "pieces": 1
+        }
+      ]
+    },
+    {
+      "id": "xyNM4klK8",
+      "orderData": [
+        {
+          "id": "3",
+          "title": "The last of Us: Part 2",
+          "icon": "images/cards/tlou2card.webp",
+          "category": "games",
+          "price": 60,
+          "totalPrice": 60,
+          "pieces": 1
+        },
+        {
+          "id": "2",
+          "title": "Stray",
+          "icon": "images/cards/straycard.webp",
+          "category": "games",
+          "price": 30,
+          "totalPrice": 30,
+          "pieces": 1
+        },
+        {
+          "id": "1",
+          "title": "The last of Us",
+          "icon": "images/cards/tloucard.webp",
+          "category": "games",
+          "price": 50,
+          "totalPrice": 50,
+          "pieces": 1
+        }
+      ]
+    },
+    {
+      "id": "A1fmhfVPU",
+      "orderData": [
+        {
+          "id": "4",
+          "title": "Kingdome Come Deliverance",
+          "icon": "images/cards/kingdomecard.webp",
+          "category": "games",
+          "price": 40,
+          "totalPrice": 160,
+          "pieces": 4
+        },
+        {
+          "id": "5",
+          "title": "Resident-Evil 2",
+          "icon": "images/cards/re2card.webp",
+          "category": "games",
+          "price": 50,
+          "totalPrice": 200,
+          "pieces": 4
+        },
+        {
+          "id": "6",
+          "title": "Red Dead Redemption 2",
+          "icon": "images/cards/rdr2card.webp",
+          "category": "games",
+          "price": 60,
+          "totalPrice": 420,
+          "pieces": 7
+        }
+      ]
+    }
+  ]
 }

@@ -5,12 +5,14 @@ import productsReducer from './productsRedux';
 import optionsReducer from './optionRedux';
 import mailsReducer from './mailsRedux';
 import storeCartReducer from './storeCartRedux';
+import orderReducer from './orderRedux';
 
 const subreducers = {
     products: productsReducer,
     options: optionsReducer,
     mails: mailsReducer,
-    storeCart: storeCartReducer
+    storeCart: storeCartReducer,
+    orders: orderReducer
 }
 
 const reducer = combineReducers(subreducers);

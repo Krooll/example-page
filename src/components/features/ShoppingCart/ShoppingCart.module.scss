@@ -4,4 +4,27 @@
     height: auto;
 }
 
+.sumData {
+    display: flex;
 
+}
+
+.buttonSection {
+    text-align: end;
+}
+
+.button {
+    height: auto;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    background-color: $blue-color;
+    color: $white-color;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.button:hover {
+    color: $blue-color;
+    background-color: $white-color;
+    border: 1px solid $blue-color;
+}

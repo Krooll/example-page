@@ -37,11 +37,11 @@ const OrderData = (props) => {
             <span className={styles.itemTitle}>{props.title}</span>
             <div className={styles.counter}>
                 <button onClick={handleAddQuantity} className={styles.counterButtons}>+</button>
-                <span>{props.pieces}</span>
+                <span className={styles.itemPieces}>{props.pieces}</span>
                 <button onClick={handleRemoveQuantity} className={styles.counterButtons}>-</button>
                 </div>
             <div className={styles.itemPrice}>
-                {props.totalPrice}
+                {props.totalPrice} $
             </div>
             <div className={styles.deleteButton}>
                 <button onClick={() => handleDeleteOrder(props.id)} className={styles.itemDelete}>{trash}</button>
