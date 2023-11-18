@@ -17,7 +17,10 @@ const ShopCard = (props) => {
             setAlert(true);
         }else {
             e.preventDefault();
-        dispatch(addActiveOrder({id: props.id, title: props.title, icon: props.icon, category: props.category, price: props.price, pieces: props.pieces}));
+            dispatch(addActiveOrder({
+                id: props.id, title: props.title, icon: props.icon, category: props.category, 
+                price: props.price, totalPrice: props.totalPrice, pieces: props.pieces
+            }));
         }
     };
     /*Fontawesome Icons*/

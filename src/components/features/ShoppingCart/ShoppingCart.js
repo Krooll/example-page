@@ -1,19 +1,13 @@
-import { deleteActiveOrder, getAllOrders } from '../../../redux/storeCartRedux';
+import { getAllOrders, getTotalPriceSum } from '../../../redux/storeCartRedux';
 import styles from './ShoppingCart.module.scss';
 import { Col, Offcanvas,  } from 'react-bootstrap';
-import { useDispatch, useSelector } from 'react-redux';
-import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import OrderData from '../OrderData/OrderData';
+import { useSelector } from 'react-redux';
 
 const ShoppingCart = (props) => {
-    /*Fontawesome icons*/
-    const trash = <FontAwesomeIcon icon={faTrashCan} />
     const activeOrders = useSelector(getAllOrders);
-
-    const deleteDispatch = useDispatch();
-    const handleDeleteOrder = (orderId) => {
-        deleteDispatch(deleteActiveOrder(orderId));
-    };
+    const totalSum = useSelector(getTotalPriceSum);
+    console.log('activeOrder', activeOrders);
 
     if(!activeOrders.length){
         return(
@@ -37,25 +31,9 @@ const ShoppingCart = (props) => {
             </Offcanvas.Header>
                 <Offcanvas.Body>
                 <Col xs={12} md={12} lg={12} className={styles.cartWindow}>
-                    {activeOrders.map(order => 
-                        <div className={styles.cartItem} key={order.id}>
-                            <img className={styles.itemImg} src={order.icon}></img>
-                            <span className={styles.itemTitle}>{order.title}</span>
-                            <div className={styles.counter}>
-                                <button className={styles.counterButtons}>+</button>
-                                <span>{order.pieces}</span>
-                                <button className={styles.counterButtons}>-</button>
-                            </div>
-                            <div className={styles.itemPrice}>
-                                {order.price}
-                            </div>
-                            <div className={styles.deleteButton}>
-                                <button onClick={() => handleDeleteOrder(order.id)} className={styles.itemDelete}>{trash}</button>
-                            </div>
-                        </div>
-                    )}
+                    {activeOrders.map(order => <OrderData key={order.id} {...order} />)}
                   <div>
-                    suma: 
+                    suma: {totalSum}
                   </div>
                 </Col>
                 </Offcanvas.Body>

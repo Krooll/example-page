@@ -9,6 +9,7 @@
       "bestSeller": "true",
       "description": "Jesteś gotów rozpocząć przygodę z The Last of Us™? Ta gra to przejmująca opowieść, która przedstawia świat dwie dekady po pandemii.",
       "price": 50,
+      "totalPrice": 50,
       "pieces": 1,
       "category": "games",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -22,6 +23,7 @@
       "bestSeller": "false",
       "description": "Stray to trzecioosobowa kocia gra przygodowa, której akcja rozgrywa się wśród szczegółowo dopracowanych, zalanych światłem neonów alejek.",
       "price": 30,
+      "totalPrice": 30,
       "pieces": 1,
       "category": "games",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -35,6 +37,7 @@
       "bestSeller": "true",
       "description": "The Last of Us: Part II to przygodowa gra akcji będącą kontynuacją przeboju z 2013 roku.",
       "price": 60,
+      "totalPrice": 60,
       "pieces": 1,
       "category": "games",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -48,6 +51,7 @@
       "bestSeller": "false",
       "description": "Pierwszoosobowa gra RPG, osadzona w historycznych realiach średniowiecznej Europy Środkowej.",
       "price": 40,
+      "totalPrice": 40,
       "pieces": 1,
       "category": "games",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -61,6 +65,7 @@
       "bestSeller": "false",
       "description": "Resident Evil 2 zaoferuje graczom świeże spojrzenie na klasyczną sagę survivalego horroru.",
       "price": 50,
+      "totalPrice": 50,
       "pieces": 1,
       "category": "games",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -74,6 +79,7 @@
       "bestSeller": "true",
       "description": "Gdy napad w mieście Blackwater kończy się katastrofą, Arthur Morgan i gang van der Lindego zmuszeni są uciekać.",
       "price": 60,
+      "totalPrice": 60,
       "pieces": 1,
       "category": "games",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -87,6 +93,7 @@
       "bestSeller": "false",
       "description": "Poznaj Ghost of Tsushima w wersji Directors Cut. Odkrywaj piękno Cuszimy w tej osadzonej w otwartym świecie przygodowej grze akcji.",
       "price": 50,
+      "totalPrice": 50,
       "pieces": 1,
       "category": "games",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -100,6 +107,7 @@
       "bestSeller": "false",
       "description": "Osadzona w otwartym świecie w klimacie science fiction gra RPG oparta na papierowym systemie fabularnym Cyberpunk.",
       "price": 45,
+      "totalPrice": 45,
       "pieces": 1,
       "category": "games",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -113,6 +121,7 @@
       "bestSeller": "false",
       "description": "Granie i rozrywka 4K w fantastycznej jakości HDR1.",
       "price": 150,
+      "totalPrice": 150,
       "pieces": 1,
       "category": "accessories",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -126,6 +135,7 @@
       "bestSeller": "false",
       "description": "Super wygodny kontroler posiadający najnowsze rozwiązania, abyś mógł czuć wiecej.",
       "price": 55,
+      "totalPrice": 55,
       "pieces": 1,
       "category": "accessories",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -139,6 +149,7 @@
       "bestSeller": "false",
       "description": "Najnowsza konsola od Sony, wyniesie Cię na wyżyny gamingu",
       "price": 255,
+      "totalPrice": 255,
       "pieces": 1,
       "category": "accessories",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -152,6 +163,7 @@
       "bestSeller": "false",
       "description": "Pad do PS5 otwiera nowe możliwości doświadczeń",
       "price": 80,
+      "totalPrice": 80,
       "pieces": 1,
       "category": "accessories",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -165,6 +177,7 @@
       "bestSeller": "false",
       "description": "Poczuj dzwięk 3D i rozkoszuj się muzyką gdzie tylko chcesz",
       "price": 99,
+      "totalPrice": 99,
       "pieces": 1,
       "category": "accessories",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -178,6 +191,7 @@
       "bestSeller": "false",
       "description": "Wirtualna rzeczywistość jeszcze nigdy nie była tak blisko...",
       "price": 200,
+      "totalPrice": 200,
       "pieces": 1,
       "category": "accessories",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -191,6 +205,7 @@
       "bestSeller": "false",
       "description": "Zarządzaj każdym sprzętem z rodziny Playstation za pomocą jednego urządzenia",
       "price": 35,
+      "totalPrice": 35,
       "pieces": 1,
       "category": "accessories",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -204,6 +219,7 @@
       "bestSeller": "false",
       "description": "Dodaj siebie do filmów z rozgrywek i transmisji - dzięki płynnym, ostrym filmom Full HD.",
       "price": 150,
+      "totalPrice": 150,
       "pieces": 1,
       "category": "accessories",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -262,5 +278,6 @@
       "message": "Testuje aplikacje pod kątem działania wysyłania maili do Api"
     }
   ],
+
   "orders": []
 }
