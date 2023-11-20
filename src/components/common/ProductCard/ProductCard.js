@@ -7,7 +7,7 @@ const ProductCard = (props) => {
         <Nav.Link as={NavLink} to={'/' + props.id} >
             <button className={styles.card}>
             <div className={styles.cardImage}>
-                <img className={styles.image} src={props.image} />
+                <img className={styles.image} src={props.image} alt='product'/>
             </div>
             <div className={styles.cardText}>
                 <h5>{props.title}</h5>

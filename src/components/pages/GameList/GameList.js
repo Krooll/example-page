@@ -6,7 +6,6 @@ import { fetchProducts, getAllProducts } from '../../../redux/productsRedux';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import ProductCard from '../../common/ProductCard/ProductCard';
-import List from '../../common/List/List';
 
 const GameList = () => {
     const productList = useSelector(getAllProducts);

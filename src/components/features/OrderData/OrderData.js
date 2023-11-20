@@ -33,7 +33,7 @@ const OrderData = (props) => {
 
     return (
         <div className={styles.cartItem} key={props.id}>
-            <img className={styles.itemImg} src={props.icon}></img>
+            <img className={styles.itemImg} src={props.icon} alt='product'></img>
             <span className={styles.itemTitle}>{props.title}</span>
             <div className={styles.counter}>
                 <button onClick={handleAddQuantity} className={styles.counterButtons}>+</button>

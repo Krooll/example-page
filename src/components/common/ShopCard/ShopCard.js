@@ -27,7 +27,7 @@ const ShopCard = (props) => {
     const addOrder = <FontAwesomeIcon icon={faCartPlus}/>
     return(
         <div className={styles.card}>
-            <img className={styles.cardImg} src={props.icon}/>
+            <img className={styles.cardImg} src={props.icon} alt='product'/>
             <div className={styles.cardTitle}>
                 {props.title}
             </div >

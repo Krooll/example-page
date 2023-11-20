@@ -1,13 +1,13 @@
 import styles from './Home.module.scss';
 import NavBar from '../../features/NavBar/NavBar';
-import SocialSection from '../../views/Footer/SocialsSection/SocialsSection';
-import MainPageCaroussel from '../../views/MainPageCaroussel/MainPageCaroussel';
+import SocialSection from '../../views/SocialsSection/SocialsSection';
+import HomePageSlider from '../../views/HomePageSlider/HomePageSlider';
 
 const Home = () => {
     return(
         <div>
             <NavBar />
-            <MainPageCaroussel />
+            <HomePageSlider />
             <SocialSection />
         </div>
     );

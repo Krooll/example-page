@@ -7,7 +7,6 @@ import { Container, Col } from 'react-bootstrap';
 import NavBar from '../../features/NavBar/NavBar';
 import ProductCard from '../../common/ProductCard/ProductCard';
 import { useEffect } from 'react';
-import List from '../../common/List/List';
 
 const BestSellers = () => {
     const productList = useSelector(getAllProducts);

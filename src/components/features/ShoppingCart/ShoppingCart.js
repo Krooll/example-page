@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { sendOrderRequest } from '../../../redux/orderRedux';
 import shortid from 'shortid';
 import { useState } from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 
 const ShoppingCart = (props) => {
     const activeOrders = useSelector(getAllOrders);

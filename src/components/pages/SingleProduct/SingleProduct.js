@@ -31,7 +31,7 @@ const SingleProduct = () => {
         <div>
             <NavBar />
             <div className={styles.singleCard}>
-                <img className={styles.singleBackGround } src={productById.fullImage} />
+                <img className={styles.singleBackGround } src={productById.fullImage} alt='product'/>
                 <Col xs={6} md={6} lg={6} className={styles.cardTitle}>
                     <h3 className={styles.title}>{productById.title}</h3>   
                 </Col>

@@ -1,4 +1,4 @@
-import { Container, Col, Modal, Button } from 'react-bootstrap';
+import { Container, Col, Modal } from 'react-bootstrap';
 import styles from './Help.module.scss';
 import NavBar from '../../features/NavBar/NavBar';
 import { useForm } from "react-hook-form";

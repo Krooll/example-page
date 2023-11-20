@@ -6,13 +6,15 @@ import optionsReducer from './optionRedux';
 import mailsReducer from './mailsRedux';
 import storeCartReducer from './storeCartRedux';
 import orderReducer from './orderRedux';
+import imagesReducer from './imagesRedux';
 
 const subreducers = {
     products: productsReducer,
     options: optionsReducer,
     mails: mailsReducer,
     storeCart: storeCartReducer,
-    orders: orderReducer
+    orders: orderReducer,
+    images: imagesReducer
 }
 
 const reducer = combineReducers(subreducers);

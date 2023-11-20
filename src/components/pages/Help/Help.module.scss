@@ -25,13 +25,17 @@
 .buttonForm {
     height: auto;
     width: 100px;
-    border: none;
+    border: 1px solid $white-color;
     border-radius: 15px;
     background-color: $blue-color;
     color: $white-color;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
 .buttonForm:hover {
+    color: $blue-color;
+    background-color: $white-color;
+    border-color: $blue-color;
     transform: scale(1.05);
     transition: 0.1s;
 }
