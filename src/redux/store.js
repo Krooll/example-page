@@ -6,7 +6,7 @@ import optionsReducer from './optionRedux';
 import mailsReducer from './mailsRedux';
 import storeCartReducer from './storeCartRedux';
 import orderReducer from './orderRedux';
-import imagesReducer from './imagesRedux';
+import imagesReducer from './imageRedux';
 
 const subreducers = {
     products: productsReducer,

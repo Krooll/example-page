@@ -4,6 +4,7 @@ import SocialSection from '../../views/SocialsSection/SocialsSection';
 import HomePageSlider from '../../views/HomePageSlider/HomePageSlider';
 
 const Home = () => {
+   
     return(
         <div>
             <NavBar />

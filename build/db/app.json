@@ -262,6 +262,25 @@
       "path": "help"
     }
   ],
+
+  "test": [
+    {
+      "id": "1",
+      "image": "images/carousel/camera.webp",
+      "category": "accessories"
+    },
+    {
+      "id": "2",
+      "image": "images/carousel/console.webp",
+      "category": "accessories"
+    },
+    {
+      "id": "3",
+      "image": "images/carousel/gamepad.webp",
+      "category": "accessories"
+    }
+  ], 
+
   "mails": [
     {
       "id": "99A62CO9t",
@@ -280,13 +299,5 @@
   ],
   "orders": [
     
-  ], 
-
-  "images": [
-    {
-      "id": "1",
-      "image": "images/carousel/camera.webp",
-      "category": "accessories"
-    }
   ]
 }
