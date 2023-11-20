@@ -1,0 +1,45 @@
+@import '../../../../styles/settings.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    padding: 50px;
+    background-color: $background-color;
+}
+
+.titleSection {
+    text-align: center;
+}
+
+.title {
+    font-weight: 400;
+}
+
+.buttonSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.buttons {
+    margin: 20px;
+    font-size: 7.5rem;
+    background: none;
+    border: none;
+    transition: color 0.2s;
+}
+
+.buttons:hover {
+    color: $white-color;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
