@@ -3,7 +3,6 @@ export const API_URL = process.env.NODE_ENV === 'production' ?  '/api' : 'http:/
 
 //selectors
 export const getAllImages = (state) => state.images;
-console.log('reduximages', getAllImages)
 
 // actions
 const createActionName = actionName => `app/images/${actionName}`;
@@ -14,7 +13,7 @@ export const updatedImages = payload => ({type: UPDATE_IMAGES, payload});
 
 export const fetchImages = () => {
   return (dispatch) => {
-      fetch(API_URL + '/test')
+      fetch(API_URL + '/images')
         .then(res => res.json())
         .then(images => {
             dispatch(updatedImages(images));
