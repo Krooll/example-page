@@ -1,6 +1,6 @@
 import styles from './MainPageCaroussel.module.scss';
 
-const MainPageCaroussel = () => {
+const HomePageSlider = () => {
     return (
         <div>
             1
@@ -8,4 +8,4 @@ const MainPageCaroussel = () => {
     );
 };
 
-export default MainPageCaroussel;
+export default HomePageSlider;

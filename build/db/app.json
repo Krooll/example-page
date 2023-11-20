@@ -225,6 +225,7 @@
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
   ],
+
   "options": [
     {
       "id": "1",
@@ -262,6 +263,7 @@
       "path": "help"
     }
   ],
+
   "mails": [
     {
       "id": "99A62CO9t",
@@ -278,6 +280,7 @@
       "message": "Testuje aplikacje pod kątem działania wysyłania maili do Api"
     }
   ],
+
   "orders": [
     {
       "id": "j1LVYvDZb",
@@ -361,5 +364,49 @@
         }
       ]
     }
+  ],
+
+  "images": [
+    {
+      "id": "1",
+      "image": "images/carousel/stray.webp",
+      "category": "games"
+    },
+    {
+      "id": "2",
+      "image": "images/carousel/thelast.webp",
+      "category": "games"
+    },
+    {
+      "id": "3",
+      "image": "images/carousel/thushima.webp",
+      "category": "games"
+    },
+    {
+      "id": "4",
+      "image": "images/carousel/uncharted.webp",
+      "category": "games"
+    },
+    {
+      "id": "5",
+      "image": "images/carousel/headphone.webp",
+      "category": "accessories"
+    },
+    {
+      "id": "6",
+      "image": "images/carousel/gamepad.webp",
+      "category": "accessories"
+    },
+    {
+      "id": "7",
+      "image": "images/carousel/console.webp",
+      "category": "accessories"
+    },
+    {
+      "id": "8",
+      "image": "images/carousel/camera.webp",
+      "category": "accessories"
+    }
+    
   ]
 }
