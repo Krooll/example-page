@@ -5,7 +5,7 @@ export const API_URL = process.env.NODE_ENV === 'production' ?  '/api' : 'http:/
 export const getAllImages = (state) => state.images;
 
 // actions
-const createActionName = actionName => `app/products/${actionName}`;
+const createActionName = actionName => `app/images/${actionName}`;
 const UPDATE_IMAGES = createActionName('UPDATE_IMAGES');
 
 
