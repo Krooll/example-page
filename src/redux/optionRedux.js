@@ -1,5 +1,5 @@
 //config
-export const API_URL = process.env.NODE_ENV === 'production' ?  '/api' : 'http://localhost:3232/api';
+export const API_URL = process.env.NODE_ENV === 'production' ?  '/api' : 'http://localhost:3131/api';
 
 //selectors
 export const getAllOptions = (state) => state.options;

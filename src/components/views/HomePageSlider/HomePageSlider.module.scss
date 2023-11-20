@@ -1,1 +1,69 @@
 @import '../../../styles/settings.scss';
+
+.container {
+    margin-top: 72px;
+}
+
+.carouselDescription{
+    height: 60%;
+    position: relative;
+}
+
+.img {
+    height: auto;
+    max-height: 90vh;
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    left: -5%;
+    text-align: left;
+    height: auto;
+    width: auto;
+}
+
+.titleText {
+    font-size: 3vw;
+    margin: 0;
+}
+
+.description {
+    position: absolute;
+    left: -5%;
+    top: 37%;
+    text-align: left;
+}
+
+.text {
+    margin: 0;
+    font-size: 1.2vw;
+}
+
+.buttonSection {
+    position: absolute;
+    top: 62%;
+    left: -31%;
+}
+
+.button {
+    border-radius: 15px;
+    max-width: 200px;
+    border: none;
+    background-color: $blue-color;
+    color: $white-color;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.button:hover {
+    background-color: $white-color;
+    color: $blue-color;
+}
+
+.buttonText {
+    font-size: 1.1vw;
+    margin: 0;
+    padding: 2px;
+}
+
+

@@ -262,6 +262,55 @@
       "path": "help"
     }
   ],
+  "images": [
+    {
+      "id": "1",
+      "image": "images/carousel/camera.webp",
+      "category": "accessories"
+    },
+    {
+      "id": "2",
+      "image": "images/carousel/console.webp",
+      "category": "accessories"
+    },
+    {
+      "id": "3",
+      "image": "images/carousel/gamepad.webp",
+      "category": "accessories"
+    },{
+      "id": "4",
+      "image": "images/carousel/headphone.webp",
+      "category": "accessories"
+    },
+    {
+      "id": "5",
+      "image": "images/carousel/stray.webp",
+      "title": "Stray",
+      "description": "Spójrz na ten świat oczami bezpańskiego kota i wchodź w interakcje z otoczeniem na wiele ciekawych sposobów.",
+      "category": "games"
+    },
+    {
+      "id": "6",
+      "image": "images/carousel/thelast.webp",
+      "title": "The Last Of Us: Part Two",
+      "description": "Gdy traumatyczne wydarzenie zakłóca panujący spokój, Ellie wyrusza w podróż, a jej celem jest zemsta. Polując na winowajców, będzie musiała poradzić sobie z psychicznymi oraz fizycznymi konsekwencjami swoich działań.",
+      "category": "games"
+    },
+    {
+      "id": "7",
+      "image": "images/carousel/thushima.webp",
+      "title": "Promocja na Playstation 5 jest już dostępna",
+      "description": "Tego lata zaoszedż na konsolach PS5 dzięki nieograniczonej czasowo ofercie dostępnej u wybranych sprzedawców detalicznych",
+      "category": "games"
+    },
+    {
+      "id": "8",
+      "image": "images/carousel/uncharted.webp",
+      "title": "Seria Uncharted",
+      "description": "Seria Uncharted to trzecioosobowa przygodowa gra akcji z elementami platformówki oraz skradanki. Podczas zabawy sterujemy poczynaniami Nathana, a okazjonalnie wspierać nas będzie dwójka jego przyjaciół - Sully oraz Elena.",
+      "category": "games"
+    }
+  ],
   "mails": [
     {
       "id": "99A62CO9t",
@@ -276,6 +325,13 @@
       "email": "kubiak@kubiak.pl",
       "title": "Test finałowy ",
       "message": "Testuje aplikacje pod kątem działania wysyłania maili do Api"
+    },
+    {
+      "id": "jhLqbxY63",
+      "name": "Natalia Kubiak",
+      "email": "kubiak@kubiak.pl",
+      "title": "Test 3 ",
+      "message": "Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 Test 3 "
     }
   ],
   "orders": [
@@ -449,6 +505,79 @@
           "price": 60,
           "totalPrice": 180,
           "pieces": 3
+        }
+      ]
+    },
+    {
+      "id": "ir80p5aAS",
+      "orderData": [
+        {
+          "id": "4",
+          "title": "Kingdome Come Deliverance",
+          "icon": "images/cards/kingdomecard.webp",
+          "category": "games",
+          "price": 40,
+          "totalPrice": 120,
+          "pieces": 3
+        },
+        {
+          "id": "5",
+          "title": "Resident-Evil 2",
+          "icon": "images/cards/re2card.webp",
+          "category": "games",
+          "price": 50,
+          "totalPrice": 150,
+          "pieces": 3
+        },
+        {
+          "id": "6",
+          "title": "Red Dead Redemption 2",
+          "icon": "images/cards/rdr2card.webp",
+          "category": "games",
+          "price": 60,
+          "totalPrice": 360,
+          "pieces": 6
+        }
+      ]
+    },
+    {
+      "id": "0UtMp6DGy",
+      "orderData": [
+        {
+          "id": "7",
+          "title": "Ghost of Tsushima",
+          "icon": "images/cards/gotcard.webp",
+          "category": "games",
+          "price": 50,
+          "totalPrice": 100,
+          "pieces": 2
+        },
+        {
+          "id": "5",
+          "title": "Resident-Evil 2",
+          "icon": "images/cards/re2card.webp",
+          "category": "games",
+          "price": 50,
+          "totalPrice": 100,
+          "pieces": 2
+        },
+        {
+          "id": "13",
+          "title": "Headphones",
+          "icon": "images/cards/ps5headphones.webp",
+          "category": "accessories",
+          "price": 99,
+          "totalPrice": 99,
+          "pieces": 1
+        },
+        {
+          "id": "14",
+          "title": "PS5 VR2",
+          "icon": "images/cards/ps5vr2card.webp",
+          "category": "accessories",
+          "price": 200,
+          "totalPrice": 400,
+          "pieces": 2
         }
       ]
     }
