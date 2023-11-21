@@ -7,12 +7,14 @@ import { Form } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import { sendEmailRequest } from '../../../redux/mailsRedux';
 import shortid from 'shortid';
+import { useNavigate } from 'react-router-dom';
 
 const Help = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [title, setTitle] = useState('');
     const [message, setMessage] = useState('');
+    const navigate = useNavigate();
     const [info, setInfo] = useState(false);
     const dispatch = useDispatch();
 
@@ -20,6 +22,7 @@ const Help = () => {
         if(name && email && title && message){
             dispatch(sendEmailRequest({id: shortid(), name: name, email: email, title: title, message: message}));
             setInfo(true);
+            navigate('/');
         }
     };
 

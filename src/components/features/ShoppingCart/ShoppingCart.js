@@ -7,10 +7,12 @@ import { sendOrderRequest } from '../../../redux/orderRedux';
 import shortid from 'shortid';
 import { useState } from 'react';
 import { Modal } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const ShoppingCart = (props) => {
     const activeOrders = useSelector(getAllOrders);
     const totalSum = useSelector(getTotalPriceSum);
+    const navigate = useNavigate();
     const [info, setShowInfo] = useState(false);
 
     const handleShowInfo = () => {
@@ -20,6 +22,7 @@ const ShoppingCart = (props) => {
     const dispatch = useDispatch();
     const handleSendOrder = () => {
         dispatch(sendOrderRequest({id: shortid(), orderData: activeOrders }));
+        navigate('/');
     }
 
     if(!activeOrders.length){
