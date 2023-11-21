@@ -26,7 +26,15 @@
     height: auto;
     width: auto;
     flex-wrap: wrap;
-    color: $dark-color;
+}
+
+.link {
+    color: $black-color;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: $card-background;
 }
 
 .buttons {
@@ -39,7 +47,7 @@
 }
 
 .buttons:hover {
-    color: $blue-color;
+    color: $cards-background;
     transform: scale(1.05);
     transition: 0.2s;
 }

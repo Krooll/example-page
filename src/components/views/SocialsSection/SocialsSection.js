@@ -18,15 +18,15 @@ const SocialSection = () => {
                 <h2 className={styles.title}>Sprawdź Nasze social-media!</h2>
             </Col>
             <div className={styles.buttonSection}>
-                <Link to='https://www.facebook.com/PlayStationPolska'>
-                    <button className={styles.buttons}>{facebook}</button>
-                </Link>
-                <Link to='https://www.youtube.com/channel/UC-2Y8dQb0S6DtpxNgAKoJKA'>
-                    <button className={styles.buttons}>{youtube}</button>
-                </Link>
-                <Link to='https://www.instagram.com/playstationpl/'>
-                    <button className={styles.buttons}>{instagram}</button>
-                </Link>
+                <button className={styles.buttons}>
+                    <Link className={styles.link} to='https://www.facebook.com/PlayStationPolska'>{facebook}</Link>
+                </button>
+                <button className={styles.buttons}>
+                    <Link className={styles.link} to='https://www.youtube.com/channel/UC-2Y8dQb0S6DtpxNgAKoJKA'>{youtube}</Link>
+                </button>
+                <button className={styles.buttons}>
+                    <Link className={styles.link} to='https://www.instagram.com/playstationpl/'>{instagram}</Link>
+                </button>
             </div>
         </div>
     );

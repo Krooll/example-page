@@ -16,8 +16,8 @@ import { getAllOrders } from '../../../redux/storeCartRedux';
 
 const NavBar = () => {
     const psIcon = <FontAwesomeIcon className={styles.psIcon} icon={faPlaystation} />
-    const searchIcon = <FontAwesomeIcon icon={faMagnifyingGlass} />
-    const shoppingCart = <FontAwesomeIcon icon={faCartShopping} />
+    const searchIcon = <FontAwesomeIcon className={styles.link}icon={faMagnifyingGlass} />
+    const shoppingCart = <FontAwesomeIcon className={styles.link} icon={faCartShopping} />
 
     const options = useSelector(getAllOptions);
     const [active, setActive] = useState(false);
@@ -58,7 +58,11 @@ const NavBar = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Col xs={7} sm={8} md={9} lg={7} className={styles.navSection}>
-                            <div className={styles.iconSection}><Nav.Link as={NavLink} to="/"><button className={styles.psIcon} onClick={() => setActive(false)}>{psIcon}</button></Nav.Link></div>
+                            <div className={styles.iconSection}>
+                                <Nav.Link as={NavLink} className={styles.link} to="/">
+                                    <button className={styles.psIcon} onClick={() => setActive(false)}>{psIcon}</button>
+                                </Nav.Link>
+                            </div>
                             <Nav className="me-auto">
                                 <Nav.Link onClick={() => handleFilter('games')}><p className={styles.navLinks}>Gry</p></Nav.Link>
                                 <Nav.Link onClick={() => handleFilter('accessories')}><p className={styles.navLinks}>Sprzęt</p></Nav.Link>
@@ -68,7 +72,7 @@ const NavBar = () => {
                             {active && <OpenNav filter={filter} />}
                         </Col> 
                     </Navbar.Collapse>
-                    <Col xs={5} sm={6} md={6} lg={6} className={styles.rightNavButtons}>
+                    <Col xs={6} sm={6} md={6} lg={6} className={styles.rightNavButtons}>
                         <button className={styles.searchButton}>{searchIcon}</button>
                         <button onClick={handleShowCart} className={styles.searchButton}>
                             {shoppingCart}
