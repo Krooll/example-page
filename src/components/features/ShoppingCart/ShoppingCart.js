@@ -22,8 +22,11 @@ const ShoppingCart = (props) => {
     const dispatch = useDispatch();
     const handleSendOrder = () => {
         dispatch(sendOrderRequest({id: shortid(), orderData: activeOrders }));
+    };
+
+    const handleClose = () => {
         navigate('/');
-    }
+    };
 
     if(!activeOrders.length){
         return(
@@ -61,6 +64,9 @@ const ShoppingCart = (props) => {
                 <Modal show={info}>
                     <div className={styles.info}>
                         Zamówienie zostało wysłane!
+                    </div>
+                    <div className={styles.closeSection}>
+                        <button className={styles.closeButton} onClick={handleClose}>Zamknij</button>
                     </div>
                 </Modal>
         </Offcanvas>

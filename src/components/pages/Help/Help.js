@@ -18,11 +18,14 @@ const Help = () => {
     const [info, setInfo] = useState(false);
     const dispatch = useDispatch();
 
+    const handleClose = () => {
+        navigate('/');  
+    };
+
     const handleSubmit = () => {
         if(name && email && title && message){
             dispatch(sendEmailRequest({id: shortid(), name: name, email: email, title: title, message: message}));
             setInfo(true);
-            navigate('/');
         }
     };
 
@@ -84,6 +87,9 @@ const Help = () => {
                     </Form>
                     <Modal show={info} className={styles.modal}>
                         <Modal.Title>Wiadomośc została wysłana!</Modal.Title>
+                        <div className={styles.closeSection}>
+                            <button onClick={handleClose} className={styles.closeButton}>Zamknij</button>
+                        </div>
                     </Modal>
                 </Col>
         </Container>
