@@ -1,6 +1,6 @@
 import styles from './ShopCard.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch } from 'react-redux';
 import { addActiveOrder, getOrderById } from '../../../redux/storeCartRedux';
 import { useSelector } from 'react-redux';
@@ -24,7 +24,7 @@ const ShopCard = (props) => {
         }
     };
     /*Fontawesome Icons*/
-    const addOrder = <FontAwesomeIcon icon={faCartPlus}/>
+    const addOrder = <FontAwesomeIcon icon={faCirclePlus}/>
     return(
         <div className={styles.card}>
             <img className={styles.cardImg} src={props.icon} alt='product'/>

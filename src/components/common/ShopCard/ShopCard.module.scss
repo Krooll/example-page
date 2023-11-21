@@ -25,26 +25,18 @@
 
 .cardButton {
    position: absolute;
-   top: 3%;
-   left: 79%;
-   height: 35px;
-   width: 35px;
+   left: 75%;
+   top: -4%;
    border-radius: 50px;
    border: none;
-   background-color: $blue-color;
-   color: $white-color;
-   text-align: center;
+   background: none;
+   color: $lightblue-color;
    transition: background-color 0.2s, color 0.2s;
 }
 
-.cardButton:hover {
-    background-color: $white-color;
-    color: $card-background;
-}
-
 .buttonText{
-    font-size: 1.2rem;
-    margin: 0;
+    font-size: 1.7rem;
+    margin: 10px;
 }
 
 .modalTitle {
