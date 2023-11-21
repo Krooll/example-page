@@ -68,7 +68,7 @@ const NavBar = () => {
                             {active && <OpenNav filter={filter} />}
                         </Col> 
                     </Navbar.Collapse>
-                    <Col xs={6} sm={6} md={6} lg={6} className={styles.rightNavButtons}>
+                    <Col xs={5} sm={6} md={6} lg={6} className={styles.rightNavButtons}>
                         <button className={styles.searchButton}>{searchIcon}</button>
                         <button onClick={handleShowCart} className={styles.searchButton}>
                             {shoppingCart}
