@@ -6,13 +6,25 @@
 }
 
 .textSection {
-    height: 300px;
-    width: 300px;
-    border: 2px solid;
+    height: 400px;
+    width: 375px;
+    text-align: left;
+    padding: 6% 0;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .imgSection {
-    height: 300px;
-    width: 300px;
-    border: 2px solid;
+    height: 400px;
+    width: auto;
+    max-width: 500px;
+}
+
+.img {
+    padding: 10% 0;
+    height: auto;
+    width: 100%;
 }

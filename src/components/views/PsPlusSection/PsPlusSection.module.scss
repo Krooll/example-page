@@ -1,0 +1,33 @@
+@import '../../../styles/settings.scss';
+
+.container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $cards-background;
+}
+
+.text {
+    height: auto;
+    width: 50%;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    height: auto;
+    width: 80%;
+}
+

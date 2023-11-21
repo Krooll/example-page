@@ -32,7 +32,7 @@ const AccessoriesList = () => {
         <Container>
             <NavBar />
             <Col className={styles.title}>
-            <h2>Sprzęt</h2>
+            <h1>Sprzęt</h1>
             </Col>
             <Col className={styles.list}>
                 {productList.filter(item => item.category === 'accessories').map(item => <ProductCard key={item.id} {...item} />)}

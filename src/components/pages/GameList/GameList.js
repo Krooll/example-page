@@ -31,7 +31,7 @@ const GameList = () => {
         <Container>
             <NavBar />
             <Col className={styles.title}>
-            <h2>Gry</h2>
+            <h1>Gry</h1>
             </Col>
             <Col className={styles.list}>
                 {productList.filter(item => item.category === 'games').map(item => <ProductCard key={item.id} {...item} /> )}

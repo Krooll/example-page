@@ -277,7 +277,8 @@
       "id": "3",
       "image": "images/carousel/gamepad.webp",
       "category": "accessories"
-    },{
+    },
+    {
       "id": "4",
       "image": "images/carousel/headphone.webp",
       "category": "accessories"
@@ -299,7 +300,7 @@
     {
       "id": "7",
       "image": "images/carousel/thushima.webp",
-      "title": "Promocja na Playstation 5 jest już dostępna",
+      "title": "Promocja na Playstation 5 jest już dostępna!",
       "description": "Tego lata zaoszedż na konsolach PS5 dzięki nieograniczonej czasowo ofercie dostępnej u wybranych sprzedawców detalicznych",
       "category": "games"
     },
@@ -311,6 +312,95 @@
       "category": "games"
     }
   ],
+
+  "abonament": [
+    {
+      "id": "1",
+      "title": "PREMIUM",
+      "description": "Poznaj wszystkie korzyści.",
+      "list": [
+        {
+          "listId": "1",
+          "title": "Gry co miesiąc"
+        },
+        {
+          "listId": "2",
+          "title": "Wieloosobowa gra online"
+        },
+        {
+          "listId": "3",
+          "title": "Wyjątkowe zniżki"
+        },
+        {
+          "listId": "4",
+          "title": "Wyjątkowa zawartość"
+        },
+        {
+          "listId": "5",
+          "title": "Pamięć w chmurze"
+        },
+        {
+          "listId": "6",
+          "title": "Share-play"
+        },
+        {
+          "listId": "7",
+          "title": "Katalog gier"
+        },
+        {
+          "listId": "8",
+          "title": "Katalog klasyki"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "EXTRA",
+      "description": "Odkryj setki gier.",
+      "list": [
+        {
+          "listId": "1",
+          "title": "Gry co miesiąc"
+        },
+        {
+          "listId": "2",
+          "title": "Wieloosobowa gra online"
+        },
+        {
+          "listId": "3",
+          "title": "Wyjątkowe zniżki"
+        },
+        {
+          "listId": "4",
+          "title": "Wyjątkowa zawartość"
+        },
+        {
+          "listId": "5",
+          "title": "Pamięć w chmurze"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "ESSENTIAL",
+      "description": "Poznaj świat PS.",
+      "list": [
+        {
+          "listId": "1",
+          "title": "Gry co miesiąc"
+        },
+        {
+          "listId": "2",
+          "title": "Wieloosobowa gra online"
+        },
+        {
+          "listId": "3",
+          "title": "Wyjątkowe zniżki"
+        }
+      ]
+    }
+  ],
+
   "mails": [
     {
       "id": "99A62CO9t",
@@ -578,6 +668,38 @@
           "price": 200,
           "totalPrice": 400,
           "pieces": 2
+        }
+      ]
+    },
+    {
+      "id": "IGSnkyR22",
+      "orderData": [
+        {
+          "id": "12",
+          "title": "PS5 Gamepad",
+          "icon": "images/cards/ps5gamepadcard.webp",
+          "category": "accessories",
+          "price": 80,
+          "totalPrice": 160,
+          "pieces": 2
+        },
+        {
+          "id": "13",
+          "title": "Headphones",
+          "icon": "images/cards/ps5headphones.webp",
+          "category": "accessories",
+          "price": 99,
+          "totalPrice": 495,
+          "pieces": 5
+        },
+        {
+          "id": "14",
+          "title": "PS5 VR2",
+          "icon": "images/cards/ps5vr2card.webp",
+          "category": "accessories",
+          "price": 200,
+          "totalPrice": 1000,
+          "pieces": 5
         }
       ]
     }

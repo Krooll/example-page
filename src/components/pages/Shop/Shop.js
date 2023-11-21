@@ -51,7 +51,7 @@ const Shop = () => {
         <Container>
             <NavBar />
             <div className={styles.title}>
-                <h2>Sklep</h2>
+                <h1>Sklep</h1>
             </div>
             <div className={styles.shopButtons}>
                 <button className={styles.categoryButton} onClick={() => handleFilterCategory('games')}>

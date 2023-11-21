@@ -7,9 +7,8 @@
     align-items: center;
     height: auto;
     width: auto;
-    margin-bottom: 40px;
     padding: 50px;
-    background-color: $background-color;
+    background-color: $cards-background;
 }
 
 .titleSection {
@@ -30,6 +29,7 @@
 }
 
 .buttons {
+    height: auto;
     margin: 20px;
     font-size: 7.5rem;
     background: none;
@@ -38,7 +38,7 @@
 }
 
 .buttons:hover {
-    color: $white-color;
+    color: $blue-color;
     transform: scale(1.05);
     transition: 0.2s;
 }
