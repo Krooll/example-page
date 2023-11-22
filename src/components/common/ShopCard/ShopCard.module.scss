@@ -25,13 +25,17 @@
 
 .cardButton {
    position: absolute;
-   left: 75%;
+   left: 70%;
    top: -4%;
    border-radius: 50px;
    border: none;
    background: none;
    color: $lightblue-color;
    transition: background-color 0.2s, color 0.2s;
+}
+
+.cardButton:hover {
+    color: $card-background;
 }
 
 .buttonText{

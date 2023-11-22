@@ -56,7 +56,7 @@ const ShoppingCart = (props) => {
                         Do zapłaty: {totalSum} $
                     </Col>
                     <Col xs={6} md={6} lg={6} className={styles.buttonSection}>
-                        <button onClick={() => {handleShowInfo(); handleSendOrder();}} className={styles.button}>Zamów</button>
+                        <button onClick={() => {handleSendOrder(); handleShowInfo(); }} className={styles.button}>Zamów</button>
                     </Col>
                   </div>
                 </Col>
