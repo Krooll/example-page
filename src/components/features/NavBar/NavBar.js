@@ -73,7 +73,7 @@ const NavBar = () => {
                         </Col> 
                     </Navbar.Collapse>
                     <Col xs={6} sm={6} md={6} lg={6} className={styles.rightNavButtons}>
-                        <button className={styles.searchButton}>{searchIcon}</button>
+                       <button className={styles.searchButton}> <Nav.Link as={NavLink} to="/search">{searchIcon}</Nav.Link></button>
                         <button onClick={handleShowCart} className={styles.searchButton}>
                             {shoppingCart}
                             {orderCounter !== 0 && (
