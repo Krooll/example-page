@@ -15,14 +15,12 @@ const SearchForm = () => {
     const productList = useSelector(getAllProducts);
     const [search, setSearch] = useState('');
     const [result, setResult] = useState([]);
-    
+    const filter = productList.filter(product => product.title.toLowerCase().includes(search.toLowerCase()));
 
     const filterProducts = (e) => {
-        const filter = productList.filter(product => product.title.toLowerCase().includes(search.toLowerCase()));
         e.preventDefault();
         if(filter.length){
             setResult(filter);
-            console.log('result', result);
             setSearch('');
         }else{
             setResult([]);
@@ -34,6 +32,24 @@ const SearchForm = () => {
     useEffect(() => {
         dispatch(fetchProducts());
     }, [dispatch]);
+
+    if(!productList.length){
+        return(
+            <Container>
+                <NavBar />
+                <Col xs={12} md={12} lg={12} className={styles.titleSection}>
+                    <p>Wczytywanie...</p>
+                </Col>
+            </Container>
+        );
+    }else if(!filter.length){
+        <Container>
+                <NavBar />
+                <Col xs={12} md={12} lg={12} className={styles.titleSection}>
+                    <p>Brak wyników</p>
+                </Col>
+        </Container>
+    };
 
     return(
         <Container>
