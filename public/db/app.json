@@ -497,6 +497,43 @@
           "pieces": 3
         }
       ]
+    },
+    {
+      "id": "qQkeQirwI",
+      "orderData": [
+        {
+          "id": "5",
+          "title": "Resident-Evil 2",
+          "icon": "images/cards/re2card.webp",
+          "category": "games",
+          "price": 50,
+          "totalPrice": 150,
+          "pieces": 3
+        }
+      ]
+    },
+    {
+      "id": "EBuBahf0I",
+      "orderData": [
+        {
+          "id": "12",
+          "title": "PS5 Gamepad",
+          "icon": "images/cards/ps5gamepadcard.webp",
+          "category": "accessories",
+          "price": 80,
+          "totalPrice": 400,
+          "pieces": 5
+        },
+        {
+          "id": "10",
+          "title": "PS4 Gamepad",
+          "icon": "images/cards/ps4gamepadcard.webp",
+          "category": "accessories",
+          "price": 55,
+          "totalPrice": 165,
+          "pieces": 3
+        }
+      ]
     }
   ]
 }
