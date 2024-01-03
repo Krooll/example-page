@@ -63,7 +63,7 @@ const NavBar = () => {
                                     <button className={styles.psIcon} onClick={() => setActive(false)}>{psIcon}</button>
                                 </Nav.Link>
                             </div>
-                            <Nav className="me-auto">
+                            <Nav className={styles.navLinksSection}>
                                 <Nav.Link onClick={() => handleFilter('games')}><p className={styles.navLinks}>Gry</p></Nav.Link>
                                 <Nav.Link onClick={() => handleFilter('accessories')}><p className={styles.navLinks}>Sprzęt</p></Nav.Link>
                                 <Nav.Link onClick={() => handleFilter('shop')}><p className={styles.navLinks}>Sklep</p></Nav.Link>
