@@ -90,6 +90,7 @@
     background: none;
     font-size: 1rem;
     margin: 0 2px;
+    position: relative;
 }
 
 .searchButton:hover {
@@ -107,7 +108,7 @@
     text-align: center;
     position: absolute;
     right: 0;
-    top: -20%;
+    top: -15%;
     font-size: 0.6rem;
 }
 
