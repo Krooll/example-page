@@ -39,6 +39,7 @@
     color: $white-color;
     transition: background-color 0.2s, color 0.2s, outline 0.2s, border-color 0.2s;
     outline: solid $blue-color;
+    text-align: center;
 }
 
 .categoryButton:hover {

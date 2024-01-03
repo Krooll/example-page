@@ -534,6 +534,29 @@
           "pieces": 3
         }
       ]
+    },
+    {
+      "id": "6RdX9_eMH",
+      "orderData": [
+        {
+          "id": "3",
+          "title": "The last of Us: Part 2",
+          "icon": "images/cards/tlou2card.webp",
+          "category": "games",
+          "price": 60,
+          "totalPrice": 120,
+          "pieces": 2
+        },
+        {
+          "id": "4",
+          "title": "Kingdome Come Deliverance",
+          "icon": "images/cards/kingdomecard.webp",
+          "category": "games",
+          "price": 40,
+          "totalPrice": 80,
+          "pieces": 2
+        }
+      ]
     }
   ]
 }

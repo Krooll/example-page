@@ -25,8 +25,8 @@
 
 .cardButton {
    position: absolute;
-   left: 70%;
-   top: -4%;
+   left: 75%;
+   top: -2%;
    border-radius: 50px;
    border: none;
    background: none;
@@ -40,7 +40,8 @@
 
 .buttonText{
     font-size: 1.7rem;
-    margin: 10px;
+    margin: 5px;
+    color: $blue-color;
 }
 
 .modalTitle {

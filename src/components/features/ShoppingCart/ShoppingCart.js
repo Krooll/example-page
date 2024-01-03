@@ -26,6 +26,7 @@ const ShoppingCart = (props) => {
 
     const handleClose = () => {
         navigate('/');
+        activeOrders = [];
     };
 
     if(!activeOrders.length){
