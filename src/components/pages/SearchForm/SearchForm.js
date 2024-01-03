@@ -1,4 +1,4 @@
-import { Container, Form, Col, FormControl } from 'react-bootstrap';
+import { Container, Form, Col, FormControl, Nav } from 'react-bootstrap';
 import styles from './SearchForm.module.scss';
 import NavBar from '../../features/NavBar/NavBar';
 import { useSelector } from 'react-redux';
@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ProductCard from '../../common/ProductCard/ProductCard';
+import { NavLink } from 'react-router-dom';
 
 const SearchForm = () => {
     /*FontAwesome*/
@@ -42,13 +43,19 @@ const SearchForm = () => {
                 </Col>
             </Container>
         );
-    }else if(!filter.length){
-        <Container>
+    }
+    if(!filter.length){
+        return(
+            <Container>
                 <NavBar />
                 <Col xs={12} md={12} lg={12} className={styles.titleSection}>
                     <p>Brak wyników</p>
+                    <Nav.Link as={NavLink} className={styles.link} to="/">
+                        <button className={styles.backButton}>Wróć</button>
+                    </Nav.Link>
                 </Col>
-        </Container>
+            </Container>
+        );
     };
 
     return(

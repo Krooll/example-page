@@ -1,4 +1,4 @@
-import { getAllOrders, getTotalPriceSum } from '../../../redux/storeCartRedux';
+import { getAllOrders, getTotalPriceSum, removeAllOrders } from '../../../redux/storeCartRedux';
 import styles from './ShoppingCart.module.scss';
 import { Col, Offcanvas } from 'react-bootstrap';
 import OrderData from '../OrderData/OrderData';
@@ -24,9 +24,10 @@ const ShoppingCart = (props) => {
         dispatch(sendOrderRequest({id: shortid(), orderData: activeOrders }));
     };
 
+    const deleteAllOrdersDispatch = useDispatch();
     const handleClose = () => {
         navigate('/');
-        activeOrders = [];
+        deleteAllOrdersDispatch(removeAllOrders({activeOrders}));
     };
 
     if(!activeOrders.length){

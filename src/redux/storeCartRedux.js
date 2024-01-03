@@ -16,6 +16,7 @@ const DELETE_ORDER = createActionName('DELETE_ORDER');
 const ADD_QUANTITY = createActionName('ADD_QUANTITY');
 const REMOVE_QUANTITY = createActionName('REMOVE_QUANTITY');
 const UPDATE_PLUS_PRICE = createActionName('UPDATE_PLUS_PRICE');
+const DELETE_ALLORDERS = createActionName('DELETE_ALLORDERS');
 
 // action creators
 export const addActiveOrder = payload => ({type: ADD_ORDER, payload});
@@ -23,6 +24,7 @@ export const deleteActiveOrder = payload => ({type: DELETE_ORDER, payload});
 export const addQuantity = payload => ({type: ADD_QUANTITY, payload});
 export const removeQuantity = payload => ({type: REMOVE_QUANTITY, payload});
 export const updatePlusPrice = payload => ({type: UPDATE_PLUS_PRICE, payload});
+export const removeAllOrders = payload => ({type: DELETE_ALLORDERS, payload});
 
 const storeCartReducer = (statePart = [], action) => {
   switch (action.type) {
@@ -30,6 +32,8 @@ const storeCartReducer = (statePart = [], action) => {
       return [...statePart, {...action.payload}]; 
     case DELETE_ORDER:
       return statePart.filter(item => item.id !== action.payload); 
+    case DELETE_ALLORDERS:
+      return statePart.filter(item => item.id === action.payload); 
     case ADD_QUANTITY:
       return statePart.map(item =>item.id === action.payload.id ? { ...item, pieces: item.pieces + 1 } : item);
     case REMOVE_QUANTITY:
